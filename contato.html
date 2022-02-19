@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contato</title>
+  </head>
+  <body>
+    <!--Estrutura-->
+    <fieldset>
+      <legend>Entre em contato</legend>
+
+      <!--Opcoes-->
+      <label for="assuntoselect">Assunto:</label>
+      <select name="assuntos" id="assuntoselect">
+        <option value="ajuda">suporte</option>
+        <option value="opniao">Sugestão</option>
+        <option value="advertencia">Reclamação</option>
+      </select>
+      <br />
+      <br />
+
+      <!--nome completo-->
+      <label for="namecomplet">Nome Completo:</label> <br />
+      <input
+        type="text"
+        name="seunome"
+        id="namecomplet"
+        placeholder="Seu nome"
+        required
+        minlength="10"
+        maxlength="200"
+      />
+      <br />
+      <br />
+
+      <!--E-mail-->
+      <label for="emailcomplet">E-mail:</label> <br />
+      <input
+        type="email"
+        name="emailuser"
+        id="emailcomplet"
+        required
+        placeholder="email@seucontato.com"
+        minlength="10"
+        maxlength="200"
+      />
+      <br />
+      <br />
+
+      <!--Area de menssagem-->
+      <label for="messageoption">Mensagem</label> <br />
+      <textarea
+        name="message"
+        id="messageoption"
+        cols="30"
+        rows="10"
+        required
+        placeholder="Digite sua mensagem"
+      ></textarea>
+      <br />
+      <br />
+
+      <!--Marcacao de termos-->
+      <input type="checkbox" name="checkboxterms" id="aceitartermos" />
+      <label for="aceitartermos">Aceito receber novidades por e-mail</label>
+      <br />
+      <br />
+
+      <!--botao de enviar-->
+      <button type="submit">Enviar</button>
+    </fieldset>
+  </body>
+</html>
